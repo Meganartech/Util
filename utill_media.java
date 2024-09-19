@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.VsmartEngine.MediaJungle.test;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -49,9 +49,9 @@ public class utill_media {
               String tra = trai.getTextContent();
               String stude = stud.getTextContent();
               String valid = val.getTextContent();
-              logger.info("No of trainer"+tra);
-              logger.info("No of student"+stude);
-	         String formattedDate = formatter.format(date)+tra+stude+valid;
+              logger.info("No of videos"+tra);
+              logger.info("type of license "+stude);
+	         String formattedDate = tra+stude+valid;
 	         logger.info("Last modified date complete"+formattedDate);
              System.out.println("----------------------------------------------------------------");
              logger.info(Jwts.builder()
